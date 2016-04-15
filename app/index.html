@@ -4,20 +4,26 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AturaSecond</title>
+    <title>Atura Second</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.css" />
     <!-- endbower -->
     <!-- endbuild -->
+
+    <!-- Owlcarousel -->
+    <link rel="stylesheet" href="../bower_components/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../bower_components/owl.carousel/dist/assets/owl.theme.default.css">
+    <!-- Owlcarousel -->
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
@@ -26,44 +32,75 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">AturaSecond</h3>
-      </div>
-
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-          
-          <h4>Sass</h4>
-          <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
-          
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-          
+    <section class="meeting">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <h2>MEETINGS &amp; EVENTS</h2>
+            <div class="scroll-block">
+              <ul class="list-inline">
+                <li><a href="#" class="active">overview</a></li>
+                <li><a href="#">promotions</a></li>
+                <li><a href="#" >venues</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="footer">
-        <p>♥ from the Yeoman team</p>
+    </section>
+    <section class="meeting-slider">
+      <div class="container-fluid">
+        <div class="row ">
+          <div class="col-xs-12 gutter-none">
+            <div class="owl-carousel">
+              <div class="carousel-img">
+                <img src="images/meeting.jpg" alt="meeting">
+              </div>
+              <div class="carousel-img">
+                <img src="images/meeting.jpg" alt="meeting">
+              </div>
+              <div class="carousel-img">
+                <img src="images/meeting.jpg" alt="meeting">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    
+    </section>
+    <section class="overview">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-7 col-md-8">
+            <h2>Overview</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            <h3>Perfect for:</h3>
+            <ul>
+              <li>Meeting</li>
+              <li>Conferences</li>
+              <li>Seminars</li>
+              <li>Dinners</li>
+              <li>School formals &amp; graduations</li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-5 col-md-4 text-center">
+            <div class="enquire">
+              <a href="#" class="enquire-btn">Enquire now</a>
+              <p>Call 02 9421 0000</p>
+              <a href="mailto:mail@gmail.com">Email us</a>
+              <p><a href="#">Download Conference Kit</a></p>
+              <p><a href="#">Download Conference Menu</a></p>
+              <p><a href="#">Download Floor Plans</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -77,9 +114,10 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/owl.carousel/dist/owl.carousel.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/plugins.js -->
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
@@ -94,7 +132,10 @@
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
     <!-- endbuild -->
-    
+
+    <!--Owlarousel start-->
+    <script src="../bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+    <!--Owlcarousel end-->
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->

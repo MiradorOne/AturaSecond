@@ -1,0 +1,124 @@
+//common
+.gutter-none {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+
+
+.meeting {
+  background: $header-bg-color;
+  padding: 25px 0 63px 0;
+  h2 {
+    padding-bottom: 20px;
+    font-size:2.495em;
+    letter-spacing: 0.13em;
+    color:  #ffffff;
+    line-height:1.288em;
+    transform: scaleY(1.002);
+    font-family: 'Proximanova-regular',sans-serif;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      max-width: 371px;
+      width: 80%;
+      left:50%;
+      transform: translateX(-50%);
+      border-bottom: 3px solid #ffcc00;
+    }
+  }
+  .scroll-block {
+    li:last-of-type  {
+      a{
+        padding-right: 0;
+        border: none;
+      }
+    }
+    a {
+      font-family: "Proximanova-semibold",sans-serif;
+      color: #fff;
+      font-size: 1.214em;
+      line-height: 2.647;
+      letter-spacing:0.16em;
+      border-right: 1px solid #fff;
+      padding-right:12px;
+      padding-top: 2px;
+      text-transform: uppercase;
+    }
+    .active {
+      color: $primary-bg-color;
+    }
+  }
+}
+
+.meeting-slider {
+ .owl-nav {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   color: #fff;
+   .owl-next {
+     background: #000 url('../images/arrow-right.png') no-repeat center;
+     width:81px;
+     max-width: 81px;
+     height: 81px;
+     color: rgba(0,0,0,0);
+   }
+   .owl-prev {
+     display: none!important;
+   }
+ }
+  .owl-dots {
+    position: absolute;
+    bottom: 15px;
+    right:102px;
+  }
+
+  .owl-dot {
+    margin: 0 3px;
+    width: 17px;
+    height: 17px;
+    background: #fff;
+    border-radius: 10px;
+    display: inline-block;
+  }
+    .active {
+    background: #000;
+  }
+}
+
+.overview {
+  color: $secondary-text-color;
+  background: url('../images/overview-bg.jpg') no-repeat center;
+  background-size: cover;
+  h2,p,h3,li {
+    letter-spacing: 0.06em;
+  }
+  h2 {
+    font-family: 'Proximanova-semibold',sans-serif;
+    color:  $primary-bg-color;
+    font-size: 2.143em;
+    line-height: 1.2;
+  }
+  p,li {
+    font-family: 'Proximanova-regular',sans-serif;
+    font-size: 1em;
+    line-height: 2;
+    text-align:left;
+  }
+  li {
+    line-height:1.8;
+    list-style-image: url('../images/list-style-img.png');
+  }
+  .enquire {
+    border: 1px solid #fff;
+    margin:0 auto;
+    max-width:418px;
+  }
+  .enquire-btn {
+    @include button-variant(#000,$primary-bg-color,$primary-bg-color);
+    display:block;
+    width:386px;
+  }
+}
