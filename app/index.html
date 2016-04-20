@@ -12,6 +12,9 @@
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick-theme.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -19,6 +22,10 @@
     <link rel="stylesheet" href="../bower_components/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="../bower_components/owl.carousel/dist/assets/owl.theme.default.css">
     <!-- Owlcarousel -->
+
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="../bower_components/components-font-awesome/css/font-awesome.min.css">
+    <!--FontAwesome-->
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
@@ -28,20 +35,21 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".scroll-block">
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <section class="meeting">
-      <div class="container">
+  <main>
+    <section class="meeting" id="sticky">
+      <div class="container" >
         <div class="row">
           <div class="col-xs-12 text-center">
             <h2>MEETINGS &amp; EVENTS</h2>
             <div class="scroll-block">
-              <ul class="list-inline">
-                <li><a href="#" class="active">overview</a></li>
-                <li><a href="#">promotions</a></li>
-                <li><a href="#" >venues</a></li>
+              <ul class="nav list-inline">
+                <li><a href="#overview" >overview</a></li>
+                <li><a href="#promotions">promotions</a></li>
+                <li><a href="#venues" >venues</a></li>
               </ul>
             </div>
           </div>
@@ -67,10 +75,10 @@
         </div>
       </div>
     </section>
-    <section class="overview">
-      <div class="container">
+    <section class="overview" id="overview">
+      <div class="container padding">
         <div class="row">
-          <div class="col-xs-12 col-sm-7 col-md-8">
+          <div class="col-xs-12 col-sm-6 col-md-6">
             <h2>Overview</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
             <h3>Perfect for:</h3>
@@ -82,20 +90,174 @@
               <li>School formals &amp; graduations</li>
             </ul>
           </div>
-          <div class="col-xs-12 col-sm-5 col-md-4 text-center">
+          <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1 text-center">
             <div class="enquire">
               <a href="#" class="enquire-btn">Enquire now</a>
-              <p>Call 02 9421 0000</p>
-              <a href="mailto:mail@gmail.com">Email us</a>
-              <p><a href="#">Download Conference Kit</a></p>
-              <p><a href="#">Download Conference Menu</a></p>
-              <p><a href="#">Download Floor Plans</a></p>
+              <div class="block-links">
+                <p><i class="fa fa-phone" aria-hidden="true"></i>Call <a href="#">02 9421 0000</a></p>
+                <p><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:mail@gmail.com">Email Us</a></p>
+                <div class="download-links">
+                  <p><i class="fa fa-file-o" aria-hidden="true"></i><a href="#">Download Conference Kit</a></p>
+                  <p><i class="fa fa-file-o" aria-hidden="true"></i><a href="#">Download Conference Menu</a></p>
+                  <p><i class="fa fa-file-o" aria-hidden="true"></i><a href="#">Download Floor Plans</a></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
+    <section class="promotions-header" id="promotions" >
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <h2>Promotions</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="promotions-content">
+      <div class="container-fluid primary-bg-color">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="row slider" >
+              </div>
+              <div class="col-sm-12 col-md-7 col-md-push-5 overflow">
+                <div class="slider-img">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-5 col-md-pull-7 details">
+                <h3>MOTHERS DAY - HIP HIGH TEA LUNCH</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur sit amor.
+                </p>
+                <p>
+                  <b>Sunday 8th May 2016 12pm - 2pm $45pp</b>
+                </p>
+                <div class="contact">
+                  <p>
+                    <b>Booking essential</b>: Call <a href="#">02 9421 0000</a>
+                    or <a href="mailto:mail@mail.com">Email us</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="venues-header" id="venues">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <h2>Venues</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="venues-content">
+      <div class="container">
+        <div class="row">
+          <div class="venue">
+            <div class="col-md-6">
+              <div class="img">
+                <img src="images/venue-img-1.jpg" alt="Conference rooms" class="img-responsive">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h3>Conference rooms </h3>
+              <p>
+                Located on the ground floor, our five conference rooms are filled with natural light and able to accommodate anywhere from 5 to 200 guests. They’re perfect for meetings, seminars, dinners and private events.
+              </p>
+              <p>Our event spaces include:</p>
+              <ul>
+                <li>Function rooms with the latest AV equipment</li>
+                <li>Creative menu options for breakfast, lunch, dinner & anything in between/li>
+                <li>FREE Wi-Fi</li>
+                <li>FREE Carparking</li>
+              </ul>
+            </div>
+          </div>
+          </div>
+        <div class="venue">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="img">
+                <img src="images/venue-img-2.jpg" alt="SKYLINE DRIVE IN CINEMA " class="img-responsive">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h3>SKYLINE DRIVE IN CINEMA</h3>
+              <p>
+                If you are a company looking for an idea with great cut through for your next meeting or staff reward, there are opportunities to reserve the venue for your night. A truly unique setting for a night of fun.  There is something magical about the experience of taking in a movie in the privacy of your own car. Skyline Drive In Blacktown will offer families, romantic couples, and friends looking for a retro night out a wonderful and cost-effective experience.
+              </p>
+              <div class="contact">
+                <p>
+                  For all corporate booking / events enquiries, please contact
+                  <a href="mailto:mail@mail.com">Our Email</a> or call <a href="#">+61 02 9421 0000</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="block">
+          <h2><a href="#">FOLLOW ATURA HOTELS ON SOCIAL</a></h2>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row ">
+        <div class="col-md-12 text-center img-slider">
+          <div class="img"><img src="./images/slider-img-1.jpg" alt="img1"></div>
+          <div class="img"><img src="./images/slider-img-2.jpg" alt="img2"></div>
+          <div class="img"><img src="./images/slider-img-3.jpg" alt="img3"></div>
+          <div class="img"><img src="./images/slider-img-4.jpg" alt="img4"></div>
+          <div class="img"><img src="./images/slider-img-1.jpg" alt="img5"></div>
+          <div class="img"><img src="./images/slider-img-2.jpg" alt="img6"></div>
+          <div class="img"><img src="./images/slider-img-3.jpg" alt="img7"></div>
+          <div class="img"><img src="./images/slider-img-4.jpg" alt="img8"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <ul class="list-inline social-icons">
+            <li><a href="#" class="facebook" title="Facebook"> </a></li>
+            <li><a href="#" class="instagram" title="Instagram"></a></li>
+            <li><a href="#" class="google" title="Google +"></a></li>
+            <li><a href="#" class="spotify" title="Spotify"></a></li>
+          </ul>
+        </div>
+        <div class="col-md-12 text-center">
+          <button type="button" name="button" class="btn btn-lg"><a href="#">Explore Social Feed</a></button>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid footer-links-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center footer-links">
+            <ul class="list-inline">
+              <li><a href="#">In the press</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">PRIVACY POLICY</a></li>
+              <li><a href="#">SITE MAP</a></li>
+              <li><a href="#" class="last">CONTACT US</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 
@@ -115,6 +277,8 @@
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/owl.carousel/dist/owl.carousel.js"></script>
+    <script src="/bower_components/slick-carousel/slick/slick.min.js"></script>
+    <script src="/bower_components/sticky-kit/jquery.sticky-kit.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -139,5 +303,22 @@
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
+
+    <script>
+      $(document).ready(function(){
+        $('#sticky').stick_in_parent({
+          parent: 'body'
+        })
+          .on('sticky_kit:stick ',function () {
+            $('#sticky').css("padding","0");
+          });
+        $('#sticky').stick_in_parent({
+            parent: 'body'
+          });
+      });
+      $(document.body).trigger("sticky_kit:recalc");
+
+    </script>
+
   </body>
 </html>

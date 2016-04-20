@@ -1,0 +1,17 @@
+@media screen and (min-width: 768px) {
+  .overview {
+    .container {
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width:991px) and (min-width:768px) {
+  .overview {
+    .enquire {
+      &:before{
+        top:50%;
+      }
+    }
+  }
+}
