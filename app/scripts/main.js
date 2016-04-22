@@ -6,9 +6,10 @@ $(document).ready(function(){
     responsive:{
       0:{
         items:1,
-        nav:true
+        nav:false,
+        dots:true
       },
-      600:{
+      768:{
         items:1,
         lup:true,
         nav:false,
@@ -46,18 +47,23 @@ $(document).ready(function(){
         }
       },
       {
-        breakpoint: 768,
+        breakpoint: 769,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          arrows:false
+          arrows:false,
+          autoplay:true,
+          autoplaySpeed: 2000,
+          infinite:true
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 426,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          arrows:false
+
         }
       }
       // You can unslick at a given breakpoint now by adding:
