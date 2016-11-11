@@ -1,2 +1,2 @@
 # AturaSecond
-Demo: http://mirador.16mb.com/AturaPromos/
+Demo: https://kitdemonio.github.io/atura-promos/
